@@ -11,18 +11,22 @@
   <body class="bg-white">
     <div class="min-w-[320px] mx-auto flex flex-wrap max-w-sm items-center gap-2 p-5  
       rounded-xl border-1 border-gray-200
-      md:content-between">
-      <div class="item watch-img max-w-fit">
+      md:min-w-sm md:max-w-xl lg:max-w-3xl">
+
+      <div class="item watch-img w-1/2 md:w-1/4 md:order-1">
         <a class="watch-link" href="https://ibb.co/PZ5NsLjN" target="_blank"><img
             src="https://i.ibb.co/mV9SvYt0/watch-small.png" alt="watch-small"></a>
       </div>
-      <div class="item price-and-button ml-auto grid self-start">
+
+
+      <div class="item price-and-button ml-auto grid self-start mr-5 md:order-3">
         <h2 class="price text-black text-2xl font-semibold ml-auto">299 ₽</h2>
         <button class="bg-gray-100 text-black p-4 rounded-xl"><a class="button-link"
             href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7A6ZtNNN-lu99Rl7ych25ViLZyJVp1bYIMg&s"
             target="_blank"><span class="button-text">Купить</span></a></button>
       </div> 
-      <div class="item header">
+
+      <div class="item header text-xs w-full mr-5 md:w-1/2 md:hidden">
         <span class="description-text">
             Фитнес-браслет GEOZON Heart Rate
             Фитнес-браслет GEOZON Heart Rate [корпус - черный, ремешок - черный, 0.96", TFT (TN), 160x80,
@@ -30,7 +34,8 @@
             Bluetooth, для Android 4.4 и выше, iOS 11 и выше]
         </span>
     </div>
-    <div class="item footer">
+    
+    <div class="item footer text-xs w-full mr-5 md:w-1/2 md:hidden">
         <form action="/сравнить-цены">
             <label for="compare"><input id="compare" type="checkbox" onclick="displayComparisonMessage()"><span
                     class="compare-check">Сравнить</span></label><br>
@@ -44,17 +49,42 @@
         </p>
     </div>
 
+    <div class="item middle-section hidden md:flex md:flex-col md:gap-y-10 md:w-1/2 md:order-2 lg:gap-y-36">
 
+      <div class="header text-xs">
+        <span class="description-text">
+          Фитнес-браслет GEOZON Heart Rate
+          Фитнес-браслет GEOZON Heart Rate [корпус - черный, ремешок - черный, 0.96", TFT (TN), 160x80,
+          IP68,
+          Bluetooth, для Android 4.4 и выше, iOS 11 и выше]
+        </span>
+      </div>
 
-      <div class="item down-half-mobile flex gap-5">
-        
-        </div> 
+      <div class="footer text-xs mt-2">
+        <form action="/сравнить-цены">
+          <label for="compare">
+            <input id="compare" type="checkbox" onclick="displayComparisonMessage()">
+            <span class="compare-check">Сравнить</span>
+          </label><br>
+        </form>
+        <p class="footer-link-lines">
+          В наличии
+          <a href="https://trustedcaskets.com/collections/portland-casket-company?srsltid=AfmBOooSKvc8rYXoHXoaCEiSa7Igq02cCOWlpiXaqcdu7Q1zNZn6B4Ag"
+            target="_blank" style="text-decoration:none" class="text-blue-800">в 1 магазине</a>
+          <span class="pick-up-points">
+            Пункты выдачи <a
+              href="https://portlandloo.com/how-to-find-a-public-restroom-in-portland-and-elsewhere/"
+              target="_blank" style="text-decoration:none" class="text-blue-800">доступны</span></a>
+        </p>
+      </div>
+    </div>
 
 
     </div>
     </div>
+
+
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
-
 </html>
