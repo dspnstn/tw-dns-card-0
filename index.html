@@ -19,14 +19,14 @@
       </div>
 
 
-      <div class="item price-and-button ml-auto grid self-start mr-5 md:order-3">
+      <div class="item price-and-button ml-auto grid self-start md:order-3">
         <h2 class="price text-black text-2xl font-semibold ml-auto">299 ₽</h2>
         <button class="bg-gray-100 text-black p-4 rounded-xl"><a class="button-link"
             href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7A6ZtNNN-lu99Rl7ych25ViLZyJVp1bYIMg&s"
             target="_blank"><span class="button-text">Купить</span></a></button>
       </div> 
 
-      <div class="item header text-xs w-full mr-5 md:w-1/2 md:hidden">
+      <div class="item header text-xs w-full md:w-1/2 md:hidden">
         <span class="description-text">
             Фитнес-браслет GEOZON Heart Rate
             Фитнес-браслет GEOZON Heart Rate [корпус - черный, ремешок - черный, 0.96", TFT (TN), 160x80,
@@ -35,10 +35,11 @@
         </span>
     </div>
     
-    <div class="item footer text-xs w-full mr-5 md:w-1/2 md:hidden">
-        <form action="/сравнить-цены">
-            <label for="compare"><input id="compare" type="checkbox" onclick="displayComparisonMessage()"><span
-                    class="compare-check">Сравнить</span></label><br>
+    <div class="item footer text-xs w-full md:w-1/2 md:hidden">
+        <form action="/сравнить-цены" class="flex items-center gap-1">
+          <input id="compare" type="checkbox" onclick="displayComparisonMessage()">
+            <label for="compare">
+              <span class="compare-check">Сравнить</span></label>
         </form>
         <p class="footer-link-lines">В наличии
             <a href="https://trustedcaskets.com/collections/portland-casket-company?srsltid=AfmBOooSKvc8rYXoHXoaCEiSa7Igq02cCOWlpiXaqcdu7Q1zNZn6B4Ag"
@@ -61,11 +62,12 @@
       </div>
 
       <div class="footer text-xs mt-2">
-        <form action="/сравнить-цены">
-          <label for="compare">
-            <input id="compare" type="checkbox" onclick="displayComparisonMessage()">
+        <form action="/сравнить-цены" class="flex items-center gap-1">
+          
+          <input id="compare" type="checkbox" onclick="displayComparisonMessage()">
+          <label for="compare">            
             <span class="compare-check">Сравнить</span>
-          </label><br>
+          </label>
         </form>
         <p class="footer-link-lines">
           В наличии
